@@ -1,0 +1,18 @@
+/*通用样式*/
+body{font-family: "Microsoft YaHei"}
+*{margin: 0;padding: 0;}
+/*主容器样式*/
+.mainBody{margin:20px 20px 0 20px;background: #eee;overflow: hidden;}
+/*左侧栏样式*/
+.leftBox{float:left;width:100px;height:100px;background:#fff url("task3_img/teamLogo.jpg")15px 20px no-repeat;padding-top: 20px;padding-left: 100px;margin: 20px 0 0 20px;}
+/*右侧栏样式*/
+.rightBox{float: right;width: 120px;height: 520px;background: #fff;margin:20px 20px 20px 0;}
+.rightBox div{width:80px;height: 80px;margin: 20px auto 0 auto; }
+.xuJian{background: url("task3_img/xuJian.jpg")left center no-repeat;}
+.chongCheng{background: url("task3_img/chongCheng.jpg")left center no-repeat;}
+.liCheng{background: url("task3_img/liCheng.jpg")left center no-repeat;}
+.junLing{background: url("task3_img/junLing.jpg")left center no-repeat;}
+.changSheng{background: url("task3_img/changSheng.jpg")left center no-repeat;}
+/*中间栏样式*/
+.mainBox{margin:20px 160px 20px 240px;padding: 20px;background: #fff;}
+.mainBox p{text-indent: 2em;font-size: 15px;line-height: 28px;}

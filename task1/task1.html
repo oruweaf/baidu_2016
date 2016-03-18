@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <noscript>Your browser does not support script!</noscript>
+    <title>Task1</title>
+</head>
+<body>
+    <!--头部-->
+    <div class="header">
+        <h1>Html基础</h1>
+        <ul>
+            <li><a href="#one">文字与图片</a></li>
+            <li><a href="#two">表格与列表</a></li>
+            <li><a href="#three">表单</a></li>
+        </ul>
+    </div>
+    <!--主体-->
+    <div class="main">
+        <!--文字与图片-->
+        <div class="textImgBox">
+            <h2  name="one" id="one">文字与图片</h2>
+            <p></p>
+            <h3>《受戒》节选</h3>
+            <h4>作者：汪曾祺</h4>
+            <p>明海在家叫小明子。<strong>他是从小就确定要出家的</strong>。他的家乡不叫“出家”，叫“当和尚”。他的家乡出和尚。就像有的地方出劁猪的，有的地方出织席子的，有的地方出箍桶的，有的地方出弹棉花的，有的地方出画匠，有的地方出婊子，他的家乡出和尚。人家弟兄多，就派一个出去当和尚。当和尚也要通过关系，也有帮。这地方的和尚有的走得很远。有到杭州灵隐寺的、上海静安寺的、镇江金山寺的、扬州天宁寺的。一般的就在本县的寺庙。明海家田少，老大、老二、老三，就足够种的了。他是老四。他七岁那年，他当和尚的舅舅回家，他爹、他娘就和舅舅商议，决定叫他当和尚。他当时在旁边，觉得这实在是在情在理，没有理由反对。当和尚有很多好处。一是可以吃现成饭。哪个庙里都是管饭的。二是可以攒钱。只要学会了放瑜伽焰口，拜梁皇忏，可以按例分到辛苦钱。积攒起来，将来还俗娶亲也可以；不想还俗，买几亩田也可以。<strong>当和尚也不容易，一要面如朗月，二要声如钟磬，三要聪明记性好</strong>。他舅舅给他相了相面，叫他前走几步，后走几步，又叫他喊了一声赶牛打场的号子：“格当XX——”，说是“明子准能当个好和尚，我包了！”要当和尚，得下点本，——念几年书。哪有不认字的和尚呢！于是明子就开蒙入学，读了<em>《三字经》、《百家姓》、《四言杂字》、《幼学琼林》、《上论、下论》、《上孟、下孟》</em>，每天还写一张仿。村里都夸他字写得好，很黑。 </p>
+            <p>文章摘自<a href="https://www.douban.com/group/topic/6798962/" target="_blank">豆瓣</a></p>
+            <img src="http://img.hoop8.com/attachments/1603/9721884329911.gif" alt="扑克">
+             <img src="http://img.hoop8.com/attachments/1603/1651884329911.jpg" alt="小李">
+        </div>
+        <!--表格与列表-->
+        <div class="tableOlBox">
+            <h2  name="two" id="two">表格与列表</h2>
+            <p>table早期曾被用于页面布局，不过这种布局方式已被淘汰，现在主流布局方式为div+css</p>
+            <table border="1px">
+                <caption>成绩统计</caption>
+                <thead>
+                <tr >
+                    <th >姓名</th>
+                    <th>语文</th>
+                    <th>数学</th>
+                    <th>英语</th>
+                    <th>总分</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>66</td>
+                    <td>76</td>
+                    <td>86</td>
+                    <td>228</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>77</td>
+                    <td>87</td>
+                    <td>97</td>
+                    <td>261</td>
+                </tr>
+                <tr>
+                    <td>狗蛋</td>
+                    <td>55</td>
+                    <td>65</td>
+                    <td>75</td>
+                    <td>195</td>
+                </tr>
+                <tr>
+                    <td>平均分</td>
+                    <td colspan="4">228</td>
+                </tr>
+                </tbody>
+            </table>
+            <ol>
+                <span>成绩排名</span>
+                <li>李四 总分261</li>
+                <li>张三 总分228</li>
+                <li>狗蛋 总分195</li>
+            </ol>
+        </div>
+        <!--表单-->
+        <div class="formBox">
+            <h2  name="three" id="three">表单</h2>
+            <form action="task1.html" method="get">
+                <p>
+                    <label for="email">请输入邮箱地址</label>
+                    <input type="text" name="email" id="email" value="这是一个文本输入框">
+                </p>
+                <p>邮箱地址请安要求输入</p>
+                <p>
+                    <label for="password">请输入密码</label>
+                    <input type="password" name="password" id="password">
+                </p>
+                <p>
+                    <label for="checkPassword">请重复输入密码</label>
+                    <input type="password" name="checkPassword" id="checkPassword">
+                </p>
+                <p>密码位6-16位英文数字</p>
+                <p>
+                    <span>性别</span>
+                    <input type="radio" checked="checked" id="male" name="sex" value="male">男性
+                    <input type="radio"  id="female" name="sex" value="female">女性
+                </p>
+                <p>
+                    <span>城市</span>
+                    <select id="city" name="city">
+                        <option value="nanJing">南京</option>
+                        <option value="beiJing">北京</option>
+                        <option value="shangHai">上海</option>
+                    </select>
+                </p>
+                <p>
+                    <span>爱好</span>
+                    <input type="checkbox" value="sport">运动
+                    <input type="checkbox" value="art">艺术
+                    <input type="checkbox" value="science">科学
+                </p>
+                <p>
+                    <label for="personal">个人描述</label>
+                    <textarea name="personal" id="personal"></textarea>
+                </p>
+                <input type="submit" value="确认提交">
+            </form>
+        </div>
+    </div>
+    <!--页脚-->
+    <div class="footer">
+        <p>版权所有&copy;</p>
+    </div>
+</body>
+</html>
